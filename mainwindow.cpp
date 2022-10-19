@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-
+#include <iostream>
 double num_first;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -89,6 +89,7 @@ void MainWindow::on_pb_AC_clicked()
  ui->pb_divide->setChecked(false);
  ui->pb_multiplie->setChecked(false);
  ui->result_show->setText("0");
+ std::cout<< "HELLO!" << std::endl;
 }
 
 
